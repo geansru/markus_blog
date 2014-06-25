@@ -30,6 +30,7 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'ckeditor'
+gem 'paperclip'
 
 group :production do
   gem 'pg', '0.15.1'
