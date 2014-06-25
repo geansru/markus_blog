@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post: MyText
+  weight: MyString
+  height: MyString
+  month: MyString
+  photo: MyString
+
+two:
+  post: MyText
+  weight: MyString
+  height: MyString
+  month: MyString
+  photo: MyString

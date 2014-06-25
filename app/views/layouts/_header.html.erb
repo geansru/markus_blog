@@ -1,0 +1,10 @@
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <%= link_to "Блог Маркуса", root_path, id: "logo", class: "navbar-brand" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Домой",     root_path %></li>
+        <li><%= link_to "Вход",  new_user_session_path %></li>
+        <li><%= link_to "Регистрация",  new_user_registration_path %></li>
+      </ul>
+    </nav>
+  </header>

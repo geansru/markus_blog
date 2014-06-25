@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @marku.post %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @marku.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @marku.height %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @marku.month %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @marku.photo %>
+</p>
+
+<%= link_to 'Edit', edit_marku_path(@marku) %> |
+<%= link_to 'Back', markus_path %>
