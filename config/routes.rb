@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   resources :markus
+  get 'markus/carousel', as: 'c'
 
   root 'markus#index'
   # The priority is based upon order of creation: first created -> highest priority.

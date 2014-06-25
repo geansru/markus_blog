@@ -1,29 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="container otstup">
+  <p id="notice"><%= notice %></p>
+  
 
-<p>
-  <strong>Post:</strong>
-  <%= @marku.post %>
-</p>
-
-<p>
-  <strong>Weight:</strong>
-  <%= @marku.weight %>
-</p>
-
-<p>
-  <strong>Height:</strong>
-  <%= @marku.height %>
-</p>
-
-<p>
-  <strong>Month:</strong>
-  <%= @marku.month %>
-</p>
-
-<p>
-  <strong>Photo:</strong>
-  <%= @marku.photo %>
-</p>
-
-<%= link_to 'Edit', edit_marku_path(@marku) %> |
-<%= link_to 'Back', markus_path %>
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>Месяц:</strong> <%= @marku.month %></h3>
+  </div>
+  <div class="panel-body">
+    <%= @marku.post %>
+  </div>
+  <div class="panel-footer">
+    <h5><strong>Вес:</strong> <%= @marku.weight %> кг , <strong>Рост:</strong> <%= @marku.height %> см</h5>
+  </div>
+</div>
+  <div class="thumbnail">
+    <%= image_tag @marku.photo %>
+  </div>
+  <ul class="pager">    
+    <li class="previous"><%= link_to 'Редактировать', edit_marku_path(@marku) %></li>
+    <li class="next"><%= link_to 'Назад', markus_path %></li>
+  </ul>
