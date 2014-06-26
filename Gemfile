@@ -29,7 +29,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'devise'
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor', '4.0.8'
 #gem 'ckeditor'
 gem 'paperclip'
 
