@@ -1,4 +1,5 @@
 class MarkusController < ApplicationController
+  before_action :check
   before_action :set_marku, only: [:show, :edit, :update, :destroy]
 
   # GET /markus
@@ -71,4 +72,5 @@ class MarkusController < ApplicationController
     def marku_params
       params.require(:marku).permit(:post, :weight, :height, :month, :photo)
     end
+
 end

@@ -5,8 +5,12 @@
         <% (1..12).to_a.each do |i| %>
           <li><a href="/markus/<%= i %>"><%= i %></a></li>
         <% end %>
-        <li><%= link_to "Вход",  new_user_session_path %></li>
-        <li><%= link_to "Регистрация",  new_user_registration_path %></li>
+        <% if user_signed_in? %>
+          <li><%#= link_to "Выход", destroy_user_session_path  %></li>
+        <% else %>
+          <li><%= link_to "Вход",  new_user_session_path %></li>
+          <li><%= link_to "Регистрация",  new_user_registration_path %></li>
+        <% end%>
       </ul>
     </nav>
   </header>
