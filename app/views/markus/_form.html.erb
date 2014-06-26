@@ -13,7 +13,7 @@
         <div class="form-group">
           <%= f.label :post, 'Сообщение:', class: "col-lg-3 control-label text-left" %>
           <div class="col-lg-9">
-            <%= f.cktext_area :post, class: "form-control", placeholder: "Здесь какой-то текст:)" %>
+            <%= f.text_area :post, class: "form-control", placeholder: "Здесь какой-то текст:)", id: "txtarea" %>
           </div>
         </div>
 
@@ -57,4 +57,3 @@
     <% end %>
   </div>
 </div>
-
