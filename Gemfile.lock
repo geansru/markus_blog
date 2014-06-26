@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: 53c7e16c6a3fa457823daaff472621d795d9f81f
+  specs:
+    ckeditor (4.0.11)
+      mime-types
+      orm_adapter (~> 0.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,9 +38,6 @@ GEM
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     builder (3.2.2)
-    ckeditor (4.0.11)
-      mime-types
-      orm_adapter (~> 0.5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -141,7 +146,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ckeditor
+  ckeditor!
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 2.0)
